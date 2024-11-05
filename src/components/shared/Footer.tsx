@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
           <div className="flex space-x-4">
             {footerLinks.socialMedia.map((social, index) => (
               <a key={index} href={social.href} className="text-gray-400 hover:text-green-500">
-                <img src={social.icon} alt={`${social.icon.split('/').pop()?.split('.')[0]}`} className="w-6 h-6" />
+                <social.icon/> 
               </a>
             ))}
           </div>
@@ -41,16 +41,15 @@ const Footer: React.FC = () => {
       <div className="container mx-auto mt-8 border-t border-gray-600 pt-4 flex justify-center items-center space-x-4">
         {footerLinks.legal.map((item, index) => (
           <React.Fragment key={index}>
-          <a href={item.href} className="text-gray-400 hover:underline">
-            {item.title}
-          </a>
-          {index < footerLinks.legal.length - 1 && (
-          <span className="h-4 w-px bg-gray-400 mx-2" />
-          )}
-        </React.Fragment>
-  ))}
-</div>
-
+            <a href={item.href} className="text-gray-400 hover:underline">
+              {item.title}
+            </a>
+            {index < footerLinks.legal.length - 1 && (
+              <span className="h-4 w-px bg-gray-400 mx-2" />
+            )}
+          </React.Fragment>
+        ))}
+      </div>
     </footer>
   );
 };
