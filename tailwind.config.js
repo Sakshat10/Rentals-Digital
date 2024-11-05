@@ -22,6 +22,7 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
   		colors: {
+        'text-color': '#01A273',
         'custom-left': '#01A273',
         'custom-right': '#04D178',
       }
