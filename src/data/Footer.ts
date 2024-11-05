@@ -1,19 +1,28 @@
+import GithubIcon from '@/components/icons/Github';
+import FacebookIcon from '@/components/icons/Facebook';
+import LinkedInIcon from '@/components/icons/Linkedin';
+import SpotifyIcon from '@/components/icons/Spotify';
+import TwitterIcon from '@/components/icons/Twitter';
+
+
+import { FC } from 'react';
+
 interface Link {
-    title: string;
-    href: string;
-  }
-  
-  interface SocialMediaLink {
-    icon: string;
-    href: string;
-  }
-  
-  interface FooterLinks {
-    links: Link[];
-    socialMedia: SocialMediaLink[];
-    legal: Link[];
-  }
-  
+  title: string;
+  href: string;
+}
+
+interface SocialMediaLink {
+  icon: FC; 
+  href: string;
+}
+
+interface FooterLinks {
+  links: Link[];
+  socialMedia: SocialMediaLink[];
+  legal: Link[];
+}
+
   const footerLinks: FooterLinks = {
     links: [
       { title: "About Rentals", href: "#" },
@@ -26,12 +35,12 @@ interface Link {
       { title: "Buy", href: "#" }
     ],
     socialMedia: [
-      { icon: '/src/assets/svg/github.svg', href: "#" },
-      { icon: '/src/assets/svg/facebook.svg', href: "#" },
-      { icon: '/src/assets/svg/linkedin.svg', href: "#" },
-      { icon: '/src/assets/svg/spotify.svg', href: "#" },
-      { icon: '/src/assets/svg/twitter.svg', href: "#" }
-    ],
+        { icon: GithubIcon, href: "#" },
+        { icon: FacebookIcon, href: "#" },
+        { icon: LinkedInIcon, href: "#" },
+        { icon: SpotifyIcon, href: "#" },
+        { icon: TwitterIcon, href: "#" }
+      ],
     legal: [
       { title: "Privacy Policy", href: "#" },
       { title: "Terms and Conditions", href: "#" }
