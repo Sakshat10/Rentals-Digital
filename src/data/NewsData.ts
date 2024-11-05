@@ -1,0 +1,30 @@
+const NewsData = [
+    {
+      "id": 1,
+      "title": "Rentals Launches Phase 1 Presale with 5% Referral Rewards",
+      "date": "26 Dec 2024",
+      "readTime": "4 Min Reads",
+      "description": "The Rentals ecosystem opens its first presale phase, offering 5% rewards for referrals to incentivize early supporters.",
+      "image": "https://aemagazine.pk/posts/22083173143Courage%20the%20Cowardly%20Dog.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Phase 2 Presale: Higher Referral Rewards and P2x Payment Option",
+      "date": "26 Dec 2024",
+      "readTime": "4 Min Reads",
+      "description": "Rentals increases referral rewards to 8% and adds a new payment method for smoother transactions.",
+      "image": "https://aemagazine.pk/posts/22083173143Courage%20the%20Cowardly%20Dog.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Rentals Beta Platform Goes Live with Token Migration",
+      "date": "26 Dec 2024",
+      "readTime": "4 Min Reads",
+      "description": "The Rentals beta platform is now live, offering a preview of the ecosystem. Users who purchased via presale can migrate.",
+      "image": "https://aemagazine.pk/posts/22083173143Courage%20the%20Cowardly%20Dog.jpg"
+    }
+  ]
+  
+
+  
+  export default NewsData;
