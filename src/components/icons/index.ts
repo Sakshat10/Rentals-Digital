@@ -1,0 +1,8 @@
+export {default as binance} from "./Binance"
+export {default as facebook} from "./Facebook"
+export {default as github} from "./Github"
+export {default as linkedin} from "./Linkedin"
+export {default as spotify} from "./Spotify"
+export {default as tether} from "./Tether"
+export {default as twitter} from "./Twitter"
+export {default as usdt} from "./Usdt"
