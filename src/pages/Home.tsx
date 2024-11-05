@@ -1,9 +1,11 @@
-import { Button } from "@/components/ui/button"
+import { HeroDesc, HeroTabs } from "@/components"
+
 
 function Home() {
   return (
-    <div className="h-screen">
-      <Button>Hello</Button>
+    <div className="flex justify-around items-start bg-red-600 py-10">
+      <HeroDesc/>
+      <HeroTabs/>
     </div>
   )
 }
