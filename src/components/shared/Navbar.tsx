@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   return (
-    <div className="flex justify-between md:justify-around items-center p-5">
+    <div className="flex justify-between items-center p-5 lg:px-28">
         <a href="/">
            <img src={logo} alt="company-logo" className="h-10" />
         </a>
