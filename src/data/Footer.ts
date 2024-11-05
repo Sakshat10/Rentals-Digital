@@ -1,8 +1,4 @@
-import GithubIcon from '@/components/icons/Github';
-import FacebookIcon from '@/components/icons/Facebook';
-import LinkedInIcon from '@/components/icons/Linkedin';
-import SpotifyIcon from '@/components/icons/Spotify';
-import TwitterIcon from '@/components/icons/Twitter';
+import { github, facebook, linkedin, spotify, twitter } from '@/components/icons';
 
 
 import { FC } from 'react';
@@ -35,11 +31,11 @@ interface FooterLinks {
       { title: "Buy", href: "#" }
     ],
     socialMedia: [
-        { icon: GithubIcon, href: "#" },
-        { icon: FacebookIcon, href: "#" },
-        { icon: LinkedInIcon, href: "#" },
-        { icon: SpotifyIcon, href: "#" },
-        { icon: TwitterIcon, href: "#" }
+        { icon: github, href: "#" },
+        { icon: facebook, href: "#" },
+        { icon: linkedin, href: "#" },
+        { icon: spotify, href: "#" },
+        { icon: twitter, href: "#" }
       ],
     legal: [
       { title: "Privacy Policy", href: "#" },
