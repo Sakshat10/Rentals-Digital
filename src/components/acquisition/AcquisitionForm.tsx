@@ -10,7 +10,7 @@ function AcquisitionForm() {
 
   return (
     <div className="h-screen flex items-center justify-center">
-      <div className="lg:w-[40vw] md:w-[70vw] w-[90vw] bg-white text-custom-left rounded-2xl shadow-2xl p-8 transform transition-all duration-300 hover:scale-105 ">
+      <div className="lg:w-[40vw] md:w-[70vw] w-[90vw] bg-white text-custom-left rounded-2xl shadow-2xl p-8 md:transform md:transition-all md:duration-300 md:hover:scale-105 sm:transform-none sm:transition-none sm:hover:scale-100">
         <h2 className="text-center text-3xl font-bold mb-6 tracking-wider ">
           $Rental Token Vesting
         </h2>
