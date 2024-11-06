@@ -1,4 +1,5 @@
 export {default as Navbar} from "./shared/Navbar"
 export {default as Footer} from "./shared/Footer"
-export {default as HeroDesc} from "./home/HeroDesc"
-export {default as HeroTabs} from "./home/HeroTabs"
+export {default as HeroDesc} from "./home/hero/HeroDesc"
+export {default as HeroTabs} from "./home/hero/HeroTabs"
+export {default as LatestNews} from "./home/latestNews/LatestNews"
