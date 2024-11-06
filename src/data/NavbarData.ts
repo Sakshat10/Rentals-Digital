@@ -10,8 +10,8 @@ type NavbarItem = {
       link: "/about",
     },
     {
-      name: "Platforms",
-      link: "/platforms",
+      name: "Platform",
+      link: "/platform",
     },
     {
       name: "Acquisition",
