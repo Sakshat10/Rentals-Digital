@@ -22,8 +22,8 @@ export default {
           '50%': { transform: 'translateY(-30px)' },
         },
         rotateClockwise: { 
-          '0%, 100%': { transform: 'rotate(0deg)' },
-          '50%': { transform: 'rotate(3deg)' },
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(7deg)' },
         },
       },
       borderRadius: {
