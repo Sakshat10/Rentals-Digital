@@ -24,7 +24,7 @@ function Referral() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button className="w-full border-2 border-custom-left">connect wallet</Button>
+            <Button className="w-full border-2 border-custom-left">Generate Referral Code</Button>
           </CardFooter>
         </Card>
     </div>

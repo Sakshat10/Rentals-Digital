@@ -9,6 +9,8 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { SelectHero } from "./SelectHero";
+
 
 function TokenPurchase() {
   const [isConnected, setIsConnected] = useState(false);
@@ -28,6 +30,9 @@ function TokenPurchase() {
         <CardHeader>
           <CardTitle>Token Purchase</CardTitle>
         </CardHeader>
+        <CardContent>
+          <SelectHero/>
+        </CardContent>
         <CardContent className="space-y-2">
           <div className="space-y-1">
             <Label htmlFor="amount">Enter the amount</Label>
