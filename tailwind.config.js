@@ -1,14 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: ["class"],
-    content: [
+  darkMode: ["class"],
+  content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-  	extend: {
+    extend: {
       animation: {
         fadeIn: 'fadeIn 0.3s ease-in-out',
+        float: 'float 8s ease-in-out infinite',
+        rotateClockwise: 'rotateClockwise 5s ease-in-out infinite', 
       },
       keyframes: {
         fadeIn: {
@@ -19,22 +21,22 @@ export default {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-30px)' },
         },
+        rotateClockwise: { 
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
       },
-       animation: {
-        float: 'float 8s ease-in-out infinite',
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
       },
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		},
-  		colors: {
+      colors: {
         'text-color': '#01A273',
         'custom-left': '#01A273',
         'custom-right': '#04D178',
-      }
-  	}
+      },
+    },
   },
   plugins: [require("tailwindcss-animate")],
-}
-
+};
