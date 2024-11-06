@@ -1,5 +1,6 @@
 export {default as Navbar} from "./shared/Navbar"
 export {default as Footer} from "./shared/Footer"
-export {default as HeroDesc} from "./home/hero/HeroDesc"
-export {default as HeroTabs} from "./home/hero/HeroTabs"
+export {default as Hero} from "./home/hero/Herosection"
 export {default as LatestNews} from "./home/latestNews/LatestNews"
+export {default as Partners} from "./home/partners/Partners"
+export {default as ProjectEcosystem} from "./home/ecosystem/ProjectSection"
