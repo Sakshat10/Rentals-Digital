@@ -5,20 +5,24 @@ import Plane from "./Plane";
 import Location from "./Location";
 import LightCloud from "./LightCloud";
 import DarkCloud from "./DarkCloud";
+import TopDarkCloud from "./TopDarkCloud";
+import TopLightCloud from "./TopLightCloud";
 
 
 function Hero() {
   return (
-    <div className="lg:h-[85vh]">
-      <div className="relative flex justify-around items-start flex-wrap gap-6 py-10 px-5 md:px-4">
+    <div className="lg:h-[85vh] relative">
+      <div className=" flex justify-around items-start flex-wrap gap-6 py-10 px-5 md:px-4">
        <HeroDesc/>
        <HeroTabs/>
       </div>
        <Location/>
        <Plane/>
-       <LightCloud/>
        <DarkCloud/>
+       <LightCloud/>
        <Ballon/>
+       <TopDarkCloud/>
+       <TopLightCloud/>
     </div>
   )
 }
