@@ -1,5 +1,5 @@
 import React from 'react';
-import footerLinks from '@/data/Footer';
+import footerLinks from '@/data/FooterData';
 
 const Footer: React.FC = () => {
   return (
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
 
         {/* Right Section */}
         <div className="flex flex-col items-start space-y-4">
-          <div className="text-green-500 text-2xl font-semibold">RENTALS DIGITAL</div>
+          <div className="text-text-color text-2xl font-semibold">RENTALS DIGITAL</div>
           <div className="text-gray-400">Visit our social media</div>
           <div className="flex space-x-4">
             {footerLinks.socialMedia.map((social, index) => (
