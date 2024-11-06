@@ -1,7 +1,7 @@
 import React from 'react';
 import footerLinks from '@/data/FooterData';
 
-const Footer: React.FC = () => {
+function Footer(){
   return (
     <footer className="bg-black text-white py-8 px-4 md:px-32">
       <div className="container mx-auto grid grid-cols-2 md:grid-cols-3 md:place-items-center gap-5">

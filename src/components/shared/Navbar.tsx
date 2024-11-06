@@ -35,7 +35,7 @@ function Navbar() {
       </div>
 
       {isMenuOpen && (
-        <div className="absolute top-16 right-0 bg-gray-200 text-black rounded-lg shadow-xl w-48 transition transform scale-95 animate-fadeIn">
+        <div className="absolute top-16 right-0 bg-gray-200 text-black rounded-lg shadow-xl w-48 transition transform scale-95 animate-fadeIn z-50">
           <div className="flex flex-col p-4">
             {navbar.map((item) => (
               <a
