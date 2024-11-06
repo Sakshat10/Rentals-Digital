@@ -3,8 +3,8 @@ import plane from "@/assets/Images/plane.png"
 
 function Plane() {
   return (
-    <div className="absolute animate-float top-1/2">
-      <img src={plane} alt="" />
+    <div className="absolute animate-float top-3/4 hidden lg:block">
+      <img src={plane} alt="" className="w-96"/>
     </div>
   )
 }
