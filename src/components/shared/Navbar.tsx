@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import navbar from "@/data/Navbar";
+import navbar from "@/data/NavbarData";
 import logo from "/logo.svg";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'; 
 
