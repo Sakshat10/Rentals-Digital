@@ -1,10 +1,11 @@
-import ContactForm from "@/components/contact/ContactSection"
+import { ContactSection } from "@/components"
+
 
 
 function Contact() {
   return (
     <div>
-      <ContactForm/>
+        <ContactSection/>
     </div>
   )
 }

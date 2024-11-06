@@ -1,4 +1,5 @@
-import PlatformSection from "@/components/platform/PlatformSection"
+import { PlatformSection } from "@/components"
+
 
 
 function Platform() {
