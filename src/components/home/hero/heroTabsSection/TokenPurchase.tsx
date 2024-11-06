@@ -37,8 +37,8 @@ function TokenPurchase() {
         <CardFooter>
           <Button
             onClick={handleButtonClick}
-            className={`w-full border-2 ${
-              isConnected ? "bg-[#01A273] text-white" : "border-custom-left"
+            className={`w-full ${
+              isConnected ? "bg-teal-700 text-white" : "border-custom-left border-2"
             }`}
           >
             {isConnected ? "Buy Now" : "Connect Wallet"}
