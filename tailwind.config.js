@@ -9,8 +9,9 @@ export default {
     extend: {
       animation: {
         fadeIn: 'fadeIn 0.3s ease-in-out',
-        float: 'float 8s ease-in-out infinite',
-        rotateClockwise: 'rotateClockwise 5s ease-in-out infinite', 
+        float: 'float 8s ease-in-out infinite', 
+        move: 'move 8s ease-in-out infinite', 
+
       },
       keyframes: {
         fadeIn: {
@@ -21,15 +22,10 @@ export default {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-30px)' },
         },
-        rotateClockwise: { 
-          '0%, 100%': { transform: 'rotate(-3deg)' },
-          '50%': { transform: 'rotate(7deg)' },
+        move: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-80px)' },
         },
-      },
-      borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
         'text-color': '#01A273',
