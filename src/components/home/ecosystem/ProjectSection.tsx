@@ -2,6 +2,9 @@ import Ecosystem from "@/assets/Images/homeImages/Ecosystem.png";
 import Features from "./Features";
 import FeaturesSm from "./FeaturesSm";
 import Button from "@/components/shared/Button";
+import DarkCloudFull from "./DarkCloudFull";
+import SmallBallon from "./SmallBallon";
+import HalfPlane from "./HalfPlane";
 
 function ProjectSection() {
   return (
@@ -21,6 +24,12 @@ function ProjectSection() {
       </div>
       <div className="flex justify-center mt-8">
       <Button>Learn more about the platform</Button>
+      </div>
+
+      <div className="relative">
+      <DarkCloudFull/>
+      <SmallBallon/>
+      <HalfPlane/>
       </div>
     </div>
   );
