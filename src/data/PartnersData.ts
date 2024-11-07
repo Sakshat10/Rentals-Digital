@@ -1,4 +1,4 @@
-import partner from "@/assets/Images/partner.png"
+import partner from "@/assets/Images/homeImages/partner.png"
 
 export const partners = [
     {

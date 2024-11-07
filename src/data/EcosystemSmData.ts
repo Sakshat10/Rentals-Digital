@@ -1,4 +1,4 @@
-import ecoSmallImage from "@/assets/Images/ecoSmallImage.png";
+import ecoSmallImage from "@/assets/Images/homeImages/ecoSmallImage.png";
 
 const featuresSmData = [
   {

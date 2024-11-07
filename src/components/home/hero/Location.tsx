@@ -1,4 +1,4 @@
-import location from "@/assets/Images/location.png"
+import location from "@/assets/Images/sharedImg/location.png"
 
 function Location() {
   return (

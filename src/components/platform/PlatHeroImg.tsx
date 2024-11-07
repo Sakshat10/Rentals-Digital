@@ -1,4 +1,4 @@
-import platform from "@/assets/Images/Platform.png"
+import platform from "@/assets/Images/platformImg/Platform.png"
 
 function PlatHeroImg() {
   return (

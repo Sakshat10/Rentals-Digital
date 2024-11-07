@@ -1,4 +1,4 @@
-import Ecosystem from "@/assets/Images/Ecosystem.png";
+import Ecosystem from "@/assets/Images/homeImages/Ecosystem.png";
 import Features from "./Features";
 import FeaturesSm from "./FeaturesSm";
 import Button from "@/components/shared/Button";

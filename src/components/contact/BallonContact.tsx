@@ -1,4 +1,4 @@
-import ballon from "@/assets/Images/ballon.png"
+import ballon from "@/assets/Images/sharedImg/ballon.png"
 
 function BallonCont() {
   return (

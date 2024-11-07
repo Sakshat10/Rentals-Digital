@@ -1,6 +1,6 @@
-import Ribbon from "@/assets/Images/Ribbon.png"
-import Star from "@/assets/Images/Star.png"
-import wallet from "@/assets/Images/wallet.png"
+import Ribbon from "@/assets/Images/platformImg/Ribbon.png"
+import Star from "@/assets/Images/platformImg/Star.png"
+import wallet from "@/assets/Images/platformImg/wallet.png"
 
 const platformData = [
     {

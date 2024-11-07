@@ -1,4 +1,4 @@
-import darkCloudFull from "@/assets/Images/darkCloudFull.png"
+import darkCloudFull from "@/assets/Images/sharedImg/darkCloudFull.png"
 
 function CloudAcquisition() {
   return (

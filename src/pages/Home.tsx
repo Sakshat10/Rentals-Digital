@@ -1,5 +1,4 @@
-import { Hero, LatestNews, Partners, ProjectEcosystem } from "@/components"
-import RoadmapSection from "@/components/home/roadmap/RoadmapSection"
+import { Hero, LatestNews, Partners, ProjectEcosystem, RoadmapSection } from "@/components"
 
 
 function Home() {

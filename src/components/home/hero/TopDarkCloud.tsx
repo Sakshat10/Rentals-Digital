@@ -1,4 +1,4 @@
-import topDarkCloud from "@/assets/Images/TopDarkCloud.png"
+import topDarkCloud from "@/assets/Images/sharedImg/TopDarkCloud.png"
 
 function TopDarkCloud() {
   return (

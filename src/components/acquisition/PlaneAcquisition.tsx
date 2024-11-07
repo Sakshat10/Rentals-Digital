@@ -1,4 +1,4 @@
-import plane from "@/assets/Images/backPlane.png"
+import plane from "@/assets/Images/sharedImg/backPlane.png"
 
 function PlaneAcquisition() {
   return (

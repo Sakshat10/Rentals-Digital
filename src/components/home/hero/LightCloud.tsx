@@ -1,4 +1,4 @@
-import lightCloud from "@/assets/Images/lightCloud.png";
+import lightCloud from "@/assets/Images/sharedImg/lightCloud.png";
 
 function LightCloud() {
   return (

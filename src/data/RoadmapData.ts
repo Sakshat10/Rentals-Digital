@@ -1,4 +1,4 @@
-import dottedLine from "@/assets/Images/dottedLine.png";
+import dottedLine from "@/assets/Images/homeImages/dottedLine.png";
 
 const Roadmap = [
   {
