@@ -1,5 +1,5 @@
 import DarkCloud from "./DarkCloud";
-import LeftLightCloud from "./leftLightCloud";
+import LeftCloud from "./LeftCloud";
 import LightCloud from "./LightCloud";
 import PlatBallon from "./Platballon";
 import PlatHeroDesc from "./PlatHeroDesc";
@@ -12,7 +12,7 @@ function PlatformSection() {
       <div className="flex items-center  justify-around gap-5 flex-wrap mt-12">
         <LightCloud/>
         <DarkCloud/>
-        <LeftLightCloud/>
+        <LeftCloud/>
         <PlatHeroDesc />
         <PlatHeroImg />
         <PlatBallon />

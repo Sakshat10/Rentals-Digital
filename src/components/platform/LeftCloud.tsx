@@ -1,6 +1,6 @@
 import sideCloud from "@/assets/Images/sharedImg/leftSideCloud.png"
 
-function LeftLightCloud() {
+function LeftCloud() {
   return (
     <div className="absolute top-[40vh] left-0">
       <img src={sideCloud} alt="" className="w-14"/>
@@ -8,4 +8,4 @@ function LeftLightCloud() {
   )
 }
 
-export default LeftLightCloud
+export default LeftCloud;
