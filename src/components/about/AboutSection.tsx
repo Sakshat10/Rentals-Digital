@@ -1,7 +1,10 @@
 import AboutDesc from "./AboutDesc"
 import AboutImg from "./AboutImg"
 import RevenueModel from "./RevenueModel"
-import RevenueWork from "./RevenueWork"
+import RevenueModelDesc from "./RevenueModelDesc"
+import SolutionDesc from "./SolutionDesc"
+import SolutionImg from "./SolutionImg"
+import TokenomicsSection from "./tokenomics/TokenomicsSection"
 
 
 function AboutSection() {
@@ -11,8 +14,13 @@ function AboutSection() {
             <AboutDesc/>
             <AboutImg/>
         </div>
+        <RevenueModelDesc/>
         <RevenueModel/>
-        <RevenueWork/>
+        <TokenomicsSection/>
+        <div className="flex justify-around items-center flex-wrap gap-6 py-16 px-5 lg:mt-2 md:px-4">
+            <SolutionImg/>
+            <SolutionDesc/>
+        </div>
     </div>
   )
 }
