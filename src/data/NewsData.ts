@@ -1,3 +1,6 @@
+import rentals from "@/assets/Images/homeImages/rentals.png"
+import phase from "@/assets/Images/homeImages/phase.png"
+import migration from "@/assets/Images/homeImages/migration.png"
 const NewsData = [
     {
       "id": 1,
@@ -5,7 +8,7 @@ const NewsData = [
       "date": "26 Dec 2024",
       "readTime": "4 Min Reads",
       "description": "The Rentals ecosystem opens its first presale phase, offering 5% rewards for referrals to incentivize early supporters.",
-      "image": "https://aemagazine.pk/posts/22083173143Courage%20the%20Cowardly%20Dog.jpg"
+      "image": rentals
     },
     {
       "id": 2,
@@ -13,7 +16,7 @@ const NewsData = [
       "date": "26 Dec 2024",
       "readTime": "4 Min Reads",
       "description": "Rentals increases referral rewards to 8% and adds a new payment method for smoother transactions.",
-      "image": "https://aemagazine.pk/posts/22083173143Courage%20the%20Cowardly%20Dog.jpg"
+      "image": phase
     },
     {
       "id": 3,
@@ -21,7 +24,7 @@ const NewsData = [
       "date": "26 Dec 2024",
       "readTime": "4 Min Reads",
       "description": "The Rentals beta platform is now live, offering a preview of the ecosystem. Users who purchased via presale can migrate.",
-      "image": "https://aemagazine.pk/posts/22083173143Courage%20the%20Cowardly%20Dog.jpg"
+      "image": migration
     }
   ]
   
