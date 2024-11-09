@@ -1,9 +1,9 @@
-import tokenomics from "@/assets/Images/AboutImg/Tokenomics.png"
+import tokenomics from "@/assets/Images/AboutImg/Tokenomics.webp"
 
 function TokenomicsImg() {
   return (
-    <div>
-      <img src={tokenomics} alt="" className="w-96"/>
+    <div className="flex items-center justify-center pt-20 pl-10">
+      <img src={tokenomics} alt=""/>
     </div>
   )
 }

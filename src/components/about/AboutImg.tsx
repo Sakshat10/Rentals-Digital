@@ -1,4 +1,4 @@
-import mobileImg from "@/assets/Images/AboutImg/mobile.png"
+import mobileImg from "@/assets/Images/AboutImg/mobile.webp"
 
 function AboutImg() {
   return (

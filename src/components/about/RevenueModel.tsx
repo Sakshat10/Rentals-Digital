@@ -2,9 +2,9 @@ import data from "@/data/AboutRevenueData";
 
 function RevenueModel() {
   return (
-    <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2  place-items-center lg:place-items-start  lg:gap-0 gap-8  px-6">
+    <div className="grid lg:grid-cols-4 grid-cols-1 md:grid-cols-2 place-items-center sm:place-items-start  lg:gap-0 gap-8  px-6">
       {data.map((item, index) => (
-        <div key={index} className="flex md:w-[20vw] flex-col gap-3 items-start justify-start">
+        <div key={index} className="flex md:w-[20vw] flex-col gap-3 items-start justify-center">
           <div className="flex items-center justify-center gap-3">
             <div className="bg-custom-right p-3  rounded-full">
               <img src={item.img} alt={item.title} className="w-5"/>
