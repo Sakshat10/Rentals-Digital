@@ -1,41 +1,11 @@
-// import  { useEffect, useState, useRef } from "react";
-// import TokenomicsDesc from "./TokenomicsDesc";
-import TokenomicSvg from "./TokenomicSvg";
+import TokenomicsImg from "./TokenomicsImg";
 import TokenomicsSmDesc from "./TokenomicsSmDesc";
+import TokenomicsSmImg from "./TokenomicsSmImg";
 
-// Define the position type for each SVG section
-// type PositionType = {
-//   [key: string]: { top: number; left: number; width: number; height: number };
-// };
+
 
 function TokenomicsSection() {
-  // const [positions, setPositions] = useState<PositionType>({});
-  // const svgRef = useRef<SVGSVGElement | null>(null); // Update ref to match SVG element type
 
-  // useEffect(() => {
-  //   const svgElement = svgRef.current;
-  //   if (svgElement) {
-  //     const colorAreas = [
-  //       "publicSale",
-  //       "sustainableFund",
-  //       "developmentReserve",
-  //       "marketing",
-  //       "teamAndFounder",
-  //       "rewards",
-  //     ];
-  //     const newPositions: PositionType = {};
-
-  //     colorAreas.forEach((area) => {
-  //       const element = svgElement.querySelector<SVGGraphicsElement>(`#${area}`);
-  //       if (element) {
-  //         const { top, left, width, height } = element.getBoundingClientRect();
-  //         newPositions[area] = { top, left, width, height };
-  //       }
-  //     });
-
-  //     setPositions(newPositions);
-  //   }
-  // }, []);
 
   return (
     <div className="relative py-10 px-4">
@@ -45,12 +15,11 @@ function TokenomicsSection() {
         It facilitates transactions, rewards, and various interactions on the platform,
         leveraging blockchain technology to ensure transparency and security.
       </p>
-      <div className="flex items-center justify-center pt-20">
-        {/* Directly apply svgRef to TokenomicSvg */}
-        <TokenomicSvg/>
-      </div>
       <div className="hidden lg:block">
-      {/* <TokenomicsDesc positions={positions} /> */}
+        <TokenomicsImg/>
+      </div>
+      <div className="block lg:hidden">
+        <TokenomicsSmImg/>
       </div>
       <div className="block lg:hidden mt-10">
       <TokenomicsSmDesc/>

@@ -1,4 +1,4 @@
-import mobilePlane from "@/assets/Images/AboutImg/mobilePlane.png"
+import mobilePlane from "@/assets/Images/AboutImg/mobilePlane.webp"
 
 function SolutionImg() {
   return (
