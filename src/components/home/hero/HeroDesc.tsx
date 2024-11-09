@@ -24,9 +24,9 @@ function HeroDesc() {
       <div>
       <p className="mb-3">Referral will paid automatically in the purchase currency</p>
       <div className="flex items-center gap-4 text-white">
-      <p className="font-semibold text-lg"><span className="text-black">5% </span> in phase 1</p>
+      <p className="font-semibold text-lg"><span className="text-[#252A297A]">5% </span> in phase 1</p>
       <div className="h-5 border-l border-white"></div>
-      <p className="font-semibold text-lg"><span className="text-black">8% </span> in phase 2</p>
+      <p className="font-semibold text-lg"><span className="text-[#252A297A]">8% </span> in phase 2</p>
     </div>
     </div>
     </div>

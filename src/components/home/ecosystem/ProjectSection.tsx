@@ -1,4 +1,4 @@
-import Ecosystem from "@/assets/Images/homeImages/Ecosystem.png";
+import Ecosystem from "@/assets/Images/homeImages/Ecosystem.webp";
 import Features from "./Features";
 import FeaturesSm from "./FeaturesSm";
 import Button from "@/components/shared/Button";
@@ -9,7 +9,7 @@ import HalfPlane from "./HalfPlane";
 function ProjectSection() {
   return (
     <div className="py-10">
-      <h1 className="text-center text-3xl font-bold text-white">Project Ecosystem</h1>
+      <h1 className="text-center text-5xl font-bold text-white">Project Ecosystem</h1>
       
       <div className="hidden relative lg:block">
         <Features />
