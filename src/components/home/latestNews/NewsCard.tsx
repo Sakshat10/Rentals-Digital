@@ -23,7 +23,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ title, date, readTime, description,
     </div>
       <h3 className="text-lg font-semibold text-white">{title}</h3>
       <p className="text-white ">{description}</p>
-      <a href="#" className="text-black font-semibold flex items-center hover:underline">
+      <a href="#" className="text-[#252A297A] font-semibold flex items-center hover:underline">
         Read more <span className="ml-2">→</span>
       </a>
     </div>

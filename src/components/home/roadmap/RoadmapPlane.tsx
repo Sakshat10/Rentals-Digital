@@ -1,4 +1,4 @@
-import fullPlane from "@/assets/Images/homeImages/fullPlane.png"
+import fullPlane from "@/assets/Images/homeImages/fullPlane.webp"
 
 function RoadmapPlane() {
   return (

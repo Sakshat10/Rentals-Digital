@@ -9,7 +9,7 @@ function RoadmapDesc() {
           <div className="flex items-center gap-5">
             {item.id === "right" && <img src={item.image} alt={`${item.title} image`} width={200} height={20} />}
             <div className="flex flex-col items-start w-[20vw] gap-3">
-              <p>{item.quarter}</p>
+              <p className="text-[#252A297A] font-bold">{item.quarter}</p>
               <h1 className="text-white font-bold">{item.title}</h1>
               <p className="text-slate-300">{item.description}</p>
             </div>

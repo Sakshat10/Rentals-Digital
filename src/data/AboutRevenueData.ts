@@ -1,7 +1,7 @@
-import revenue from "@/assets/Images/AboutImg/Revenue.png"
-import token from "@/assets/Images/AboutImg/Token.png"
-import investor from "@/assets/Images/AboutImg/Investor.png"
-import liquidity from "@/assets/Images/AboutImg/Liquidity.png"
+import revenue from "@/assets/Images/AboutImg/Revenue.webp"
+import token from "@/assets/Images/AboutImg/Token.webp"
+import investor from "@/assets/Images/AboutImg/Investor.webp"
+import liquidity from "@/assets/Images/AboutImg/Liquidity.webp"
 
 const data = [
     {

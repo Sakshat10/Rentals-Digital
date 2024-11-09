@@ -1,5 +1,5 @@
 
-import plane from "@/assets/Images/homeImages/plane.png"
+import plane from "@/assets/Images/homeImages/plane.webp"
 
 function Plane() {
   return (

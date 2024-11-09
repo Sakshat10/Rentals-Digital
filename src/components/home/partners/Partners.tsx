@@ -4,7 +4,7 @@ import { partners } from "@/data/PartnersData";
 function Partners(){
   return (
     <div className="py-8 overflow-x-hidden">
-      <h2 className="text-center text-white text-3xl font-bold mb-6">Our Partners</h2>
+      <h2 className="text-center text-5xl font-bold text-white mb-6">Our Partners</h2>
       <Marquee speed={50} gradient={false}>
         <div className="flex gap-28 items-center">
           {partners.map((partner, index) => (
