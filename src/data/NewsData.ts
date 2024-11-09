@@ -1,6 +1,6 @@
-import rentals from "@/assets/Images/homeImages/rentals.png"
-import phase from "@/assets/Images/homeImages/phase.png"
-import migration from "@/assets/Images/homeImages/migration.png"
+import rentals from "@/assets/Images/homeImages/rentals.webp"
+import phase from "@/assets/Images/homeImages/phase.webp"
+import migration from "@/assets/Images/homeImages/migration.webp"
 const NewsData = [
     {
       "id": 1,
