@@ -1,9 +1,9 @@
-import mobileImg from "@/assets/Images/AboutImg/mobile.webp"
+import mobileImg from "@/assets/Images/AboutImg/Rentals.gif"
 
 function AboutImg() {
   return (
     <div>
-      <img src={mobileImg} alt="movileImg" className="w-96" />
+      <img src={mobileImg} alt="movileImg" className="md:w-[40vw]" />
     </div>
   )
 }

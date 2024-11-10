@@ -16,7 +16,7 @@ import TokenomicsSection from "./tokenomics/TokenomicsSection"
 function AboutSection() {
   return (
     <div className="min-h-screen py-7 relative">
-        <div className="flex justify-around items-center flex-wrap gap-6 py-16 px-5 md:px-4">
+        <div className="flex justify-around items-center flex-wrap gap-6  px-5 md:px-4">
             <AboutDesc/>
             <AboutImg/>
             <DarkCloud/>
