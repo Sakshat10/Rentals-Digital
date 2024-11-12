@@ -56,24 +56,6 @@ export function SelectHero() {
               >
                 USDT
               </div>
-              <div
-                className="px-4 py-2 text-gray-700 cursor-pointer hover:bg-[#01A273] hover:text-white transition"
-                onClick={() => handleSelectItem('Bitcoin')}
-              >
-                Bitcoin
-              </div>
-              <div
-                className="px-4 py-2 text-gray-700 cursor-pointer hover:bg-[#01A273] hover:text-white transition"
-                onClick={() => handleSelectItem('Ethereum')}
-              >
-                Ethereum
-              </div>
-              <div
-                className="px-4 py-2 text-gray-700 cursor-pointer hover:bg-[#01A273] hover:text-white transition"
-                onClick={() => handleSelectItem('Render')}
-              >
-                Render
-              </div>
             </div>
           </div>
         </div>
