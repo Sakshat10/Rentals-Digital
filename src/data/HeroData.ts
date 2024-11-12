@@ -1,4 +1,4 @@
-import { binance, tether, usdt } from "@/components/icons";
+import { binance, tether} from "@/components/icons";
 
 import { FC } from 'react';
 
@@ -16,7 +16,6 @@ const HeroData: HeroData = {
     Icons: [
         { icon: binance, href: "#" },
         { icon: tether, href: "#" },
-        { icon: usdt, href: "#" },
     ]
 
 }  
