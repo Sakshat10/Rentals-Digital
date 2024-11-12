@@ -15,8 +15,8 @@ function ProjectSection() {
         <Features />
       </div>
       
-      <div className="flex items-start justify-center py-8">
-        <img src={Ecosystem} alt="" className="md:w-1/2" />
+      <div className="flex items-center justify-center py-8 h-[80vh] ">
+        <img src={Ecosystem} alt="" className="md:w-[30vw]" />
       </div>
 
         <div className="block lg:hidden">

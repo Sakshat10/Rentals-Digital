@@ -2,7 +2,7 @@ import ecoSmallImage from "@/assets/Images/homeImages/ecoSmallImage.png";
 
 const featuresData = [
   {
-    id: "right",
+    id: "left",
     mainClassName: "absolute left-[3vw] top-[6vh] flex items-center justify-center gap-5 pt-7",
     secondaryClass: "flex flex-col justify-end items-end gap-3 w-[20vw] text-end",
     image: ecoSmallImage,
@@ -12,8 +12,8 @@ const featuresData = [
     },
   },
   {
-    id: "right",
-    mainClassName: "absolute left-[5vw] top-[65vh] flex items-center  justify-center gap-5 pt-7",
+    id: "left",
+    mainClassName: "absolute left-[5vw] top-[55vh] flex items-center  justify-center gap-5 pt-7",
     secondaryClass: "flex flex-col justify-end items-end gap-3 w-[20vw] text-end",
     image: ecoSmallImage,
     data: {
@@ -22,7 +22,7 @@ const featuresData = [
     },
   },
   {
-    id: "left",
+    id: "right",
     mainClassName: "absolute flex right-[3vw] top-[6vh] items-center gap-5 pt-7",
     secondaryClass: "flex flex-col justify-end items-start gap-3 w-[20vw] text-start",
     image: ecoSmallImage,
@@ -32,8 +32,8 @@ const featuresData = [
     },
   },
   {
-    id: "left",
-    mainClassName: "absolute flex right-[6vw] top-[65vh] items-center gap-5 pt-7",
+    id: "right",
+    mainClassName: "absolute flex right-[6vw] top-[55vh] items-center gap-5 pt-7",
     secondaryClass: "flex flex-col justify-end items-start gap-3 w-[20vw] text-start",
     image: ecoSmallImage,
     data: {
