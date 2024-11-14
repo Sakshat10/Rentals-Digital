@@ -1,4 +1,4 @@
-import Ecosystem from "@/assets/Images/homeImages/Ecosystem.gif";
+import Ecosystem from "@/assets/Images/homeImages/ecoSystem.svg";
 import Features from "./Features";
 import FeaturesSm from "./FeaturesSm";
 import Button from "@/components/shared/Button";
@@ -15,8 +15,8 @@ function ProjectSection() {
         <Features />
       </div>
       
-      <div className="flex items-center justify-center py-8 h-[80vh] ">
-        <img src={Ecosystem} alt="" className="md:w-[30vw]" />
+      <div className="flex items-center justify-center animate-float py-8 h-[75vh] ">
+        <img src={Ecosystem} alt="" className="" />
       </div>
 
         <div className="block lg:hidden">
