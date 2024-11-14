@@ -1,4 +1,4 @@
-import tokenomicsSm from "@/assets/Images/AboutImg/Tokenomics1.webp"
+import tokenomicsSm from "@/assets/Images/AboutImg/Tokenomics1.svg"
 
 function TokenomicsSmImg() {
   return (
