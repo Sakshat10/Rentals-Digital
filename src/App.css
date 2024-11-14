@@ -1,0 +1,13 @@
+#ray {
+    animation: moveUpDown 6s ease-in-out infinite;
+  }
+  
+  /* Keyframes for the up-down motion */
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Adjust as needed */
+    }
+  }
