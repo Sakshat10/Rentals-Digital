@@ -1,9 +1,9 @@
-import mobilePlane from "@/assets/Images/AboutImg/mobilePlane.webp"
+import mobilePlane from "@/assets/Images/AboutImg/mobilePlane.svg"
 
 function SolutionImg() {
   return (
     <div>
-      <img src={mobilePlane} alt="movileImg" className="w-96" />
+      <img src={mobilePlane} alt="movileImg" className="md:w-4/5" />
     </div>
   )
 }
