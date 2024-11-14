@@ -1,46 +1,60 @@
 const TokenomicsSmData = [
-    {
-      "id": "left",
-      "title": "Rewards and Incentives",
-      "amount": "100,000,000 RNT",
-      "percentage": "10%",
-      "color": "#FBCF84"
-    },
-    {
-      "id": "left",
-      "title": "Partnership and Marketing",
-      "amount": "100,000,000 RNT",
-      "percentage": "10%",
-      "color": "#FC81BE"
-    },
-    {
-      "id": "left",
-      "title": "Development Reserve",
-      "amount": "100,000,000 RNT",
-      "percentage": "10%",
-      "color": "#9AE6FF"
-    },
-    {
-      "id": "left",
-      "title": "Public Sale",
-      "amount": "500,000,000 RNT",
-      "percentage": "50%",
-      "color": "#85B1FB"
-    },
-    {
-      "id": "right",
-      "title": "Sustainable Development Fund",
-      "amount": "50,000,000 RNT",
-      "percentage": "5%",
-      "color": "#88FFF2"
-    },
-    {
-      "id": "right",
-      "title": "Team and Founders",
-      "amount": "150,000,000 RNT",
-      "percentage": "15%",
-      "color": "#FF9D7D"
-    }
+  {
+    "id": "left",
+    "title": "Centralized Exchanges (CEX)",
+    "amount": "5 Million",
+    "percentage": "15%",
+    "color": "#FBCF84"
+  },
+  {
+    "id": "left",
+    "title": "Team",
+    "amount": "5 Million",
+    "percentage": "5%",
+    "color": "#FF9D7D"
+  },
+  {
+    "id": "left",
+    "title": "Advisor",
+    "amount": "4 Million",
+    "percentage": "4%",
+    "color": "#FC81BE"
+  },
+  {
+    "id": "left",
+    "title": "Liquidity",
+    "amount": "4 Million",
+    "percentage": "4%",
+    "color": "#85B1FB"
+  },
+  {
+    "id": "right",
+    "title": "Private Sale 1",
+    "amount": "12 Million",
+    "percentage": "12%",
+    "color": "#9AE6FF"
+  },
+  {
+    "id": "right",
+    "title": "Private Sale 2",
+    "amount": "10 Million",
+    "percentage": "10%",
+    "color": "#88FFF2"
+  },
+  {
+    "id": "right",
+    "title": "Development",
+    "amount": "10 Million",
+    "percentage": "10%",
+    "color": "#FC82BE"
+  },
+  {
+    "id": "right",
+    "title": "Treasury",
+    "amount": "40 Million",
+    "percentage": "40%",
+    "color": "#85B1FB"
+  }
 ];
 
 export default TokenomicsSmData;
