@@ -1,12 +1,13 @@
-export {default as Navbar} from "./shared/Navbar"
-export {default as Footer} from "./shared/Footer"
-export {default as Hero} from "./home/hero/Herosection"
-export {default as LatestNews} from "./home/latestNews/LatestNews"
-export {default as Partners} from "./home/partners/Partners"
-export {default as ProjectEcosystem} from "./home/ecosystem/ProjectSection"
-export {default as AcquisitionSection} from "./acquisition/AcquisitionSection"
-export {default as ContactSection} from "./contact/ContactSection"
-export {default as PlatformSection} from "./platform/PlatformSection"
-export {default as RoadmapSection} from "./home/roadmap/RoadmapSection"
-export {default as AboutSection} from "./about/AboutSection"
-export {default as SingleNewz} from "./singleNews/SingleNewz"
+export { default as Navbar } from "./shared/Navbar";
+export { default as Footer } from "./shared/Footer";
+export { default as Hero } from "./home/hero/Herosection";
+export { default as LatestNews } from "./home/latestNews/LatestNews";
+export { default as Partners } from "./home/partners/Partners";
+export { default as ProjectEcosystem } from "./home/ecosystem/ProjectSection";
+export { default as AcquisitionSection } from "./acquisition/AcquisitionSection";
+export { default as ContactSection } from "./contact/ContactSection";
+export { default as PlatformSection } from "./platform/PlatformSection";
+export { default as RoadmapSection } from "./home/roadmap/RoadmapSection";
+export { default as AboutSection } from "./about/AboutSection";
+export { default as SingleNewz } from "./singleNews/SingleNewz";
+export { default as ConnectWallet } from "./shared/ConnectWallet";
