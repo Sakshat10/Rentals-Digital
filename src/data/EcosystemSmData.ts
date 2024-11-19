@@ -17,8 +17,8 @@ const featuresSmData = [
     secondaryClass: "flex flex-col justify-start items-start gap-3  text-end",
     image: ecoSmallImage,
     data: {
-      title: "Instant Referral Bonuses",
-      description: "Earn on referrals right at purchase.",
+      title: "Booking and payments with just 1 click",
+      description: "Without multiple intermediaries"
     },
   },
   {
