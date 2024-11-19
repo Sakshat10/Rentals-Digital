@@ -14,7 +14,7 @@ export default function ConnectWallet({ className, ...props }: IProps) {
 			}}
 			variant={"outline"}
 			className={cn(
-				"border-custom-left border-2 rounded-none text-text-color w-fit hover:text-custom-right hover:border-custom-right bg-slate-100",
+				"border-custom-left border-2 rounded-none text-text-color w-fit hover:text-custom-left hover:border-custom-left bg-slate-100",
 				className
 			)}
 		>

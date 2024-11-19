@@ -2,6 +2,7 @@ import { useState } from 'react';
 import navbar from "@/data/NavbarData";
 import logo from "/logo.svg";
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import ConnectWallet from './ConnectWallet';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,17 +17,21 @@ function Navbar() {
         <img src={logo} alt="company-logo" className="h-10" />
       </a>
 
-      <div className="hidden md:flex gap-10">
+      <div className="hidden md:flex items-center gap-10 z-50">
         {navbar.map((item) => (
           <a
             key={item.name}
             href={item.link}
+            target={item.name === "Whitepaper" ? "_blank" : undefined}
+            rel={item.name === "Whitepaper" ? "noopener noreferrer" : undefined}
             className="text-white transform transition-transform duration-200 hover:scale-110"
           >
             {item.name}
           </a>
         ))}
+        <ConnectWallet className=''/>
       </div>
+      
 
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -42,11 +47,13 @@ function Navbar() {
           >
             <AiOutlineClose size={30} />
           </button>
-          <div className="flex flex-col space-y-6 text-xl">
+          <div className="flex flex-col gap-3 space-y-6 text-xl">
             {navbar.map((item) => (
               <a
                 key={item.name}
                 href={item.link}
+                target={item.name === "Whitepaper" ? "_blank" : undefined}
+                rel={item.name === "Whitepaper" ? "noopener noreferrer" : undefined}
                 className="py-2 text-center transition rounded hover:bg-[#01A273] hover:opacity-80"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -54,6 +61,7 @@ function Navbar() {
               </a>
             ))}
           </div>
+            <ConnectWallet/>
         </div>
       )}
     </div>
