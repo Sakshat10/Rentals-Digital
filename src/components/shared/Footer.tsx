@@ -29,12 +29,19 @@ function Footer(){
           <div className="text-text-color text-2xl font-semibold">RENTALS DIGITAL</div>
           <div className="text-gray-400">Visit our social media</div>
           <div className="flex space-x-4">
-            {footerLinks.socialMedia.map((social, index) => (
-              <a key={index} href={social.href} className="text-gray-400 hover:text-green-500">
-                <social.icon/> 
-              </a>
-            ))}
-          </div>
+  {footerLinks.socialMedia.map((social, index) => (
+    <a 
+      key={index} 
+      href={social.href} 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="w-5 flex hover:text-green-500 "
+    >
+      <social.icon/> 
+    </a>
+  ))}
+</div>
+
         </div>
       </div>
       
