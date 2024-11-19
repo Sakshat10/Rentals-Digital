@@ -51,6 +51,10 @@ export default function usePurchaseToken() {
 					toast.error("All tokens have been sold");
 					return;
 				}
+				if (error.cause.shortMessage.includes("he total cost (gas * gas fee + value) of executing this transaction exceeds the balance of the account.")) {
+					toast.error("You don't have enough tokens");
+					return;
+				}
 			}
 			toast.error("Failed to purchase token.");
 		} finally {
