@@ -1,7 +1,5 @@
-import { github, facebook, linkedin, spotify, twitter } from '@/components/icons';
-
-
 import { FC } from 'react';
+import { twitter } from '@/components/icons'; 
 
 interface Link {
   title: string;
@@ -9,7 +7,7 @@ interface Link {
 }
 
 interface SocialMediaLink {
-  icon: FC; 
+  icon: FC | string; 
   href: string;
 }
 
@@ -19,29 +17,28 @@ interface FooterLinks {
   legal: Link[];
 }
 
-  const footerLinks: FooterLinks = {
-    links: [
-      { title: "About Rentals", href: "#" },
-      { title: "Contact Us", href: "#" },
-      { title: "White Paper", href: "#" },
-      { title: "Roadmap", href: "#" },
-      { title: "Platform", href: "#" },
-      { title: "Acquisition", href: "#" },
-      { title: "Blog", href: "#" },
-      { title: "Buy", href: "#" }
-    ],
-    socialMedia: [
-        { icon: github, href: "#" },
-        { icon: facebook, href: "#" },
-        { icon: linkedin, href: "#" },
-        { icon: spotify, href: "#" },
-        { icon: twitter, href: "#" }
-      ],
-    legal: [
-      { title: "Privacy Policy", href: "#" },
-      { title: "Terms and Conditions", href: "#" }
-    ]
-  };
+const footerLinks: FooterLinks = {
+  links: [
+    { title: "About Rentals", href: "/about" },
+    { title: "Contact Us", href: "/contact" },
+    { title: "White Paper", href: "/WhitePaper/WhitePaper.pdf" },
+    { title: "Roadmap", href: "#roadmap" },
+    { title: "Platform", href: "/platform" },
+    { title: "Acquisition", href: "/acquisition" },
+    { title: "Blog", href: "#" },
+    { title: "Buy", href: "/" }
+  ],
+  socialMedia: [
+    { icon: twitter, href: "https://x.com/rentalsdigital" }
+  ],
+  legal: [
+    { title: "Privacy Policy", href: "#" },
+    { title: "Terms and Conditions", href: "#" }
+  ]
+};
+
+export default footerLinks;
+
   
-  export default footerLinks;
-  
+
+
