@@ -10,11 +10,11 @@ if (!projectId)
 const metadata = {
 	name: "rental-digital",
 	description: "This is a rental website",
-	url: "http://localhost:5173", // origin must match your domain & subdomain
+	url: "http://localhost:5173", 
 	icons: ["https://assets.reown.com/reown-profile-pic.png"],
 };
 
-const networks = [bscTestnet];
+const networks: [typeof bscTestnet] = [bscTestnet];
 
 const wagmiAdapter = new WagmiAdapter({
 	networks,
