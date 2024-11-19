@@ -6,9 +6,10 @@ interface ButtonProps {
   onClick?: () => void;
   className?: string;
   type?: "button" | "submit" | "reset";
+  disabled?: boolean; // Add the disabled prop here
 }
 
-const Button: FC<ButtonProps> = ({ children, onClick, className = "", type = "button" }) => {
+const Button: FC<ButtonProps> = ({ children, onClick, className = "", type = "button", }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {

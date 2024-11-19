@@ -7,7 +7,7 @@ import SideDarkCloud from "./SideDarkCloud"
 
 function RoadmapSection() {
   return (
-    <div className='relative'>
+    <div className='relative' id="roadmap">
       <h1 className="text-center text-5xl font-bold text-white">Our Roadmap</h1>
       <div className="hidden  lg:block">
         <SideDarkCloud/>

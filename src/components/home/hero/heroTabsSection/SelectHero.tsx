@@ -1,16 +1,20 @@
-import { useState } from 'react';
+import { useState } from "react";
 
-export function SelectHero() {
+interface SelectHeroProps {
+  setToken: React.Dispatch<React.SetStateAction<"USDT" | "BNB">>;
+}
 
+export function SelectHero({ setToken }: SelectHeroProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedToken, setSelectedToken] = useState<string | null>(null);
+  const [selectedToken, setSelectedToken] = useState<"BNB" | "USDT" | null>("BNB");
 
   const handleToggle = () => {
-    setIsOpen(!isOpen); 
+    setIsOpen(!isOpen);
   };
 
-  const handleSelectItem = (value: string) => {
+  const handleSelectItem = (value: "BNB" | "USDT") => {
     setSelectedToken(value);
+    setToken(value); 
     setIsOpen(false);
   };
 
@@ -42,17 +46,16 @@ export function SelectHero() {
       {isOpen && (
         <div className="absolute mt-1 w-full bg-white border-2 rounded-md shadow-lg z-10">
           <div className="flex flex-col">
-            <div className="px-4 py-2 text-lg font-medium text-gray-700">Tokens</div>
             <div className="space-y-1">
               <div
                 className="px-4 py-2 text-gray-700 cursor-pointer hover:bg-[#01A273] hover:text-white transition"
-                onClick={() => handleSelectItem('BNB')}
+                onClick={() => handleSelectItem("BNB")}
               >
                 BNB
               </div>
               <div
                 className="px-4 py-2 text-gray-700 cursor-pointer hover:bg-[#01A273] hover:text-white transition"
-                onClick={() => handleSelectItem('USDT')}
+                onClick={() => handleSelectItem("USDT")}
               >
                 USDT
               </div>

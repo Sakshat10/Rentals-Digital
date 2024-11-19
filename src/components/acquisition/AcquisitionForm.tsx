@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useAccount } from "wagmi";
+import ConnectWallet from "../shared/ConnectWallet";
+import useGetPurchasedTokens from "@/hooks/web3/useGetPurchasedTokens";
+import toast from "react-hot-toast";
 
 function AcquisitionForm() {
-  const [isWalletConnected, setWalletConnected] = useState(false);
+  const { address: walletAddress } = useAccount();
 
-  const handleConnectWallet = () => {
-    setWalletConnected(true);
-    console.log("Wallet connected");
-  };
+  const { purchasedTokens, isLoading, isError } =
+    useGetPurchasedTokens(walletAddress);
 
   return (
     <div className="h-screen flex items-center justify-center">
@@ -21,19 +22,27 @@ function AcquisitionForm() {
           </div>
           <div className="flex justify-between items-center border-b pb-2">
             <span className=" font-medium">Balance:</span>
-            <span className=" font-semibold">0.00 $Rentals</span>
+            {isLoading ? (
+              <span className=" font-semibold">loading...</span>
+            ) : isError ? (
+              <span className=" font-semibold">0 $Rentals</span>
+            ) : (
+              <span className=" font-semibold">{purchasedTokens} $Rentals</span>
+            )}
           </div>
         </div>
-        <button
-          onClick={handleConnectWallet}
-          className={`mt-8 w-full py-3 border-2 ${
-            isWalletConnected
-              ? "bg-custom-left text-white"
-              : "border-custom-left text-custom-left"
-          } font-bold rounded-lg shadow-lg hover:opacity-90 transition-opacity duration-200 transform hover:-translate-y-1`}
-        >
-          {isWalletConnected ? "Wallet Connected" : "Connect Wallet"}
-        </button>
+        {!walletAddress ? (
+          <ConnectWallet className="mt-8 w-full" />
+        ) : (
+          <button
+            onClick={() => {
+              toast.error("Vesting hasn't started yet");
+            }}
+            className={`mt-8 w-full py-3 border-2 bg-custom-left text-white font-bold rounded-lg shadow-lg hover:opacity-90 transition-opacity duration-200 transform`}
+          >
+            Vest
+          </button>
+        )}
       </div>
     </div>
   );
