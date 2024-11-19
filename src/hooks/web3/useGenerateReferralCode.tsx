@@ -12,7 +12,7 @@ export default function useGenerateReferralCode() {
 	const [isLoading, setIsLoading] = useState<boolean>(false);
 	const [isSuccess, setIsSuccess] = useState<boolean>(false);
 
-	async function generateToken(referralCode: string) {
+	async function generateReferral(referralCode: string) {
 		try {
 			setIsSuccess(false);
 			setIsLoading(true);
@@ -28,6 +28,7 @@ export default function useGenerateReferralCode() {
 			});
 
 			setIsSuccess(true);
+			toast.success("Referral code generated successfully!");
 		} catch (error) {
 			if (error instanceof ContractFunctionExecutionError) {
 				if (
@@ -55,5 +56,5 @@ export default function useGenerateReferralCode() {
 		}
 	}
 
-	return { ...props, isPending: isLoading, isSuccess, generateToken };
+	return { ...props, isPending: isLoading, isSuccess, generateReferral };
 }

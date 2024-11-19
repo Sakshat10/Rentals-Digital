@@ -23,7 +23,7 @@ export default function useApproveTokenTransfer() {
 			if (spender === undefined) spender = contractAddress.rentalAddress;
 
 			const hash = await writeContractAsync({
-				...contractConfig.rentalConfig,
+				...contractConfig.usdtConfig,
 				functionName: "approve",
 				args: [spender, parseEther(amount.toString())],
 			});
@@ -31,8 +31,9 @@ export default function useApproveTokenTransfer() {
 			toast.success("Successfully approved token transfer.");
 
 			setIsSuccess(true);
-		} catch {
-			toast.error("Something went wrong. Please try again.");
+		} catch (error) {
+			console.log(error);
+			throw new Error("Something went wrong. Please try again.");
 		} finally {
 			setIsLoading(false);
 		}
