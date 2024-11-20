@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 interface ButtonProps {
 	children: React.ReactNode;
@@ -15,11 +15,11 @@ const Button: FC<ButtonProps> = ({
 	className = "",
 	type = "button",
 }) => {
-	const navigate = useNavigate();
+	// const navigate = useNavigate();
 
 	const handleClick = () => {
 		if (onClick) onClick();
-		navigate("/");
+		// navigate("/");
 	};
 
 	return (
