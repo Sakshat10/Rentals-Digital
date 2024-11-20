@@ -1,5 +1,11 @@
 [
-	{ "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
+	{
+		"inputs": [
+			{ "internalType": "address", "name": "_treasuryWallet", "type": "address" }
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
 	{
 		"inputs": [
 			{ "internalType": "address", "name": "target", "type": "address" }
@@ -115,7 +121,7 @@
 				"type": "string"
 			}
 		],
-		"name": "createRefferalCode",
+		"name": "createReferral",
 		"type": "event"
 	},
 	{
@@ -155,7 +161,7 @@
 	},
 	{
 		"inputs": [],
-		"name": "RENT",
+		"name": "RENTS",
 		"outputs": [{ "internalType": "address", "name": "", "type": "address" }],
 		"stateMutability": "view",
 		"type": "function"
@@ -188,6 +194,13 @@
 		"name": "couponCodes",
 		"outputs": [{ "internalType": "string", "name": "", "type": "string" }],
 		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [{ "internalType": "string", "name": "code", "type": "string" }],
+		"name": "createRefferalCode",
+		"outputs": [],
+		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
@@ -332,7 +345,7 @@
 	{
 		"inputs": [
 			{ "internalType": "uint256", "name": "_round", "type": "uint256" },
-			{ "internalType": "uint256", "name": "_rentTokenPrice", "type": "uint256" },
+			{ "internalType": "uint256", "name": "_rentsTokenPrice", "type": "uint256" },
 			{ "internalType": "uint256", "name": "_maxTokenInround", "type": "uint256" },
 			{ "internalType": "uint256", "name": "_referralRate", "type": "uint256" }
 		],
