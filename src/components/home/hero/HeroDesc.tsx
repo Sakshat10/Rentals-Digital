@@ -1,7 +1,10 @@
 import HeroData from "@/data/HeroData"; 
 import Button from "../../shared/Button";
+import Address from "./Address";
 
 function HeroDesc() {
+  const address = "0xbB4c65eDE4889Ba1E489cF4d7aF0f6c83ab6fc94";
+
   return (
     <div className="flex flex-col w-full md:w-[45vw] lg:w-[40vw] gap-6 text-white">
       <h1 className="lg:text-7xl text-5xl font-bold">Rentals Digital</h1>
@@ -9,6 +12,10 @@ function HeroDesc() {
         The new cryptocurrency payment ecosystem that rewards its users for
         their travels and tourism.
       </p>
+      <div className="flex items-center">
+        <p className="text-xl">$ Rental:</p>
+        <Address address={address} />
+      </div>
       <Button>Buy Token Now</Button>
       <div className="flex items-center gap-4">
         <p className=" text-xl">Accepting:</p>
