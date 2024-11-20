@@ -7,7 +7,9 @@ function SolutionDesc() {
       <h1 className="md:text-6xl text-3xl  font-semibold">Solution by Rentals</h1>
       <p className="text-justify">Rentals is a revolutionary platform that integrates all aspects of the travel experience into a single ecosystem.  </p>
       <p className="text-justify">Leveraging blockchain technology and cryptocurrencies, Rentals streamlines the reservation and payment process, ensures transparency through genuine customer reviews, and rewards users for their activities and interactions on the platform.</p>
+      <a href="/">
       <Button>Buy Token Now</Button>
+      </a>
     </div>
   )
 }
