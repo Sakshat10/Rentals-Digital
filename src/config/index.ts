@@ -1,5 +1,5 @@
 import { createAppKit } from "@reown/appkit/react";
-import { bscTestnet } from "@reown/appkit/networks";
+import { bsc } from "@reown/appkit/networks";
 import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
 
 const projectId = import.meta.env.VITE_WALLET_CONNECT_PROJECT_ID;
@@ -8,13 +8,13 @@ if (!projectId)
 	throw new Error("VITE_WALLET_CONNECT_PROJECT_ID is not defined");
 
 const metadata = {
-	name: "rental-digital",
+	name: "Rental Digital",
 	description: "This is a rental website",
-	url: "http://localhost:5173", 
+	url: window.location.href,
 	icons: ["https://assets.reown.com/reown-profile-pic.png"],
 };
 
-const networks: [typeof bscTestnet] = [bscTestnet];
+const networks: [typeof bsc] = [bsc];
 
 const wagmiAdapter = new WagmiAdapter({
 	networks,
@@ -27,7 +27,7 @@ createAppKit({
 	projectId,
 	metadata,
 	features: {
-		analytics: true, // Optional - defaults to your Cloud configuration
+		analytics: true,
 	},
 	allWallets: "SHOW",
 });
