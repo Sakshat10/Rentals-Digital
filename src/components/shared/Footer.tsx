@@ -35,7 +35,7 @@ function Footer(){
       href={social.href} 
       target="_blank" 
       rel="noopener noreferrer" 
-      className="w-5 flex hover:text-green-500 "
+      className="flex items-center hover:text-green-500 "
     >
       <social.icon/> 
     </a>
