@@ -46,7 +46,7 @@ function Referral() {
 	const copyToClipboard = () => {
 		if (referralCodeOnChain) {
 			navigator.clipboard.writeText(
-				`${window.location.href}/?referral-code=${referralCodeOnChain}`
+				`${window.location.href}?referral-code=${referralCodeOnChain}`
 			);
 			toast.success("Referral code copied to clipboard!");
 		}
@@ -73,7 +73,7 @@ function Referral() {
 									isLoading
 										? "loading..."
 										: referralCodeOnChain
-										? `${window.location.href}/?referral-code=${referralCodeOnChain}`
+										? `${window.location.href}?referral-code=${referralCodeOnChain}`
 										: referralCode
 								}
 								onChange={(e) => {

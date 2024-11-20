@@ -34,7 +34,7 @@ const NewsData = [
   {
     "id": 1,
     "title": "RENTALS DIGITAL: The cryptocurrency that is set to revolutionize the travel and tourism industry",
-    "date": "26 Dec 2024",
+    "date": "26 Oct 2024",
     "readTime": "4 Min Reads",
     "description": "The Rentals ecosystem opens its first presale phase, offering 5% rewards for referrals to incentivize early supporters.",
     "image": rentals,
@@ -69,7 +69,7 @@ const NewsData = [
   {
     "id": 2,
     "title": "RENTALS is revolutionizing the tourism industry with innovative blockchain-based solutions",
-    "date": "26 Dec 2024",
+    "date": "14 Oct 2024",
     "readTime": "4 Min Reads",
     "description": "Rentals increases referral rewards to 8% and adds a new payment method for smoother transactions.",
     "image": phase,
@@ -100,7 +100,7 @@ const NewsData = [
   {
     "id": 3,
     "title": "Rentals Digital: Revolutionizing Tourism with Blockchain Technology",
-    "date": "26 Dec 2024",
+    "date": "2 Oct 2024",
     "readTime": "4 Min Reads",
     "description": "The Rentals beta platform is now live, offering a preview of the ecosystem. Users who purchased via presale can migrate.",
     "image": migration,

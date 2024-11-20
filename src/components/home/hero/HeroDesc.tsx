@@ -13,7 +13,7 @@ function HeroDesc() {
         their travels and tourism.
       </p>
       <div className="flex items-center">
-        <p className="text-xl">$ Rental:</p>
+        <p className="text-md ">$ Rental:</p>
         <Address address={address} />
       </div>
       <Button>Buy Token Now</Button>
