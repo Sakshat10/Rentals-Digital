@@ -1,5 +1,5 @@
-import { FC } from 'react';
-import { twitter } from '@/components/icons'; 
+import { FC, SVGProps } from 'react';
+import { FaTwitter, FaTelegramPlane } from 'react-icons/fa'; // Import Twitter and Telegram icons
 
 interface Link {
   title: string;
@@ -7,8 +7,9 @@ interface Link {
 }
 
 interface SocialMediaLink {
-  icon: FC | string; 
+  icon: FC<SVGProps<SVGSVGElement>> | FC<{ size?: number }>; 
   href: string;
+  size?: number; 
 }
 
 interface FooterLinks {
@@ -29,16 +30,13 @@ const footerLinks: FooterLinks = {
     { title: "Buy", href: "/" }
   ],
   socialMedia: [
-    { icon: twitter, href: "https://x.com/rentalsdigital" }
+    { icon: FaTwitter, href: "https://x.com/rentalsdigital", size: 28 }, 
+    { icon: FaTelegramPlane, href: "https://t.me/RentalsDigital", size: 28 } 
   ],
   legal: [
-    { title: "Privacy Policy", href: "#" },
-    { title: "Terms and Conditions", href: "#" }
+    { title: "Privacy Policy", href: "/" },
+    { title: "Terms and Conditions", href: "/" }
   ]
 };
 
 export default footerLinks;
-
-  
-
-
