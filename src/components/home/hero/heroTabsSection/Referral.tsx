@@ -63,6 +63,7 @@ function Referral() {
 					<CardTitle>Referral</CardTitle>
 				</CardHeader>
 				<CardContent className="space-y-2">
+					<span>Reward: 5%</span>
 					<div className="space-y-1">
 						<Label htmlFor="referralCode">Referral Code</Label>
 						<div className="flex items-center gap-2">

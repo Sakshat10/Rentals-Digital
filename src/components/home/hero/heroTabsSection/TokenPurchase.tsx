@@ -28,7 +28,7 @@ function TokenPurchase() {
 		if (amount <= 0) {
 			return toast.error("Amount must be greater than 0.");
 		}
-console.log(searchParams.get("referral-code"))
+		console.log(searchParams.get("referral-code"));
 		await purchaseToken({
 			amount,
 			token,
@@ -41,7 +41,7 @@ console.log(searchParams.get("referral-code"))
 		<div>
 			<Card>
 				<CardHeader>
-					<CardTitle>Token Purchase</CardTitle>
+					<CardTitle>Token Purchase Phase 1</CardTitle>
 				</CardHeader>
 				<CardContent>
 					<SelectHero setToken={setToken} />
