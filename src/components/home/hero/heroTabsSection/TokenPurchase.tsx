@@ -49,7 +49,10 @@ function TokenPurchase() {
 
 				<CardContent className="space-y-2">
 					<div className="space-y-1">
-						<Label htmlFor="amount">Enter the amount</Label>
+						<div className="flex items-center justify-between">
+							<Label htmlFor="amount">Enter the amount</Label>
+							<span className="text-sm">Token Price: $0.025</span>
+						</div>
 						<Input
 							id="amount"
 							type="number"
