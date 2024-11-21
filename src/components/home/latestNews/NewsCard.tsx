@@ -11,7 +11,7 @@ const NewsCard: React.FC<NewsCardProps> = ({ id, title, date, readTime, descript
   return (
     <div className="p-6 space-y-4 max-w-sm rounded-md">
       <Link to={`/news/${id}`}>
-        <img src={image} alt={title} className="w-full h-56 object-cover rounded-md shadow-md" />
+        <img src={image} alt={title} className="w-full h-56 object-cover rounded-md shadow-xl" />
       </Link>
       <div className="flex items-center text-white space-x-2">
         <FiCalendar className="text-sm" />
