@@ -3,7 +3,7 @@ import dottedLine from "@/assets/Images/homeImages/dottedLine.png";
 const RoadmapSm = {
     "roadmap": [
       {
-        "quarter": "2024 - Q1",
+        "quarter": "2024 - Q3",
         "title": "Market research",
         "description": "Concept development",
         "description2": "Feasibility study",
@@ -12,7 +12,7 @@ const RoadmapSm = {
         image: dottedLine,
           },
           {
-            "quarter": "2024 - Q2",
+            "quarter": "2024 - Q4",
             "title": "Creation of the website and communication channels",
             "description": "Smart contract development",
             "description2": "Marketing Planning for the public token offering",
@@ -21,7 +21,7 @@ const RoadmapSm = {
             image: dottedLine,
               },
       {
-        "quarter": "2025 - Q3",
+        "quarter": "2025 - Q1",
         "title": "Listing of Rents on DEX and CEX",
         "description": "Closed beta testing of the platform",
         "description2": "Platform security testing",
@@ -31,14 +31,14 @@ const RoadmapSm = {
         image: dottedLine,
       },
       {
-        "quarter": "2025 - Q4",
+        "quarter": "2025 - Q2",
         "title": "Launch of the Rentals Digital Platform",
         "description": "Distribution of earnings to token holders",
         "description2": "closing deals with brand ambassadors",
         image: dottedLine,
           },
       {
-        "quarter": "2025 - Q5",
+        "quarter": "2025 - Q3",
         "title": "Listing on additional CEX platforms",
         "description": "Creation of a strategic growth team",
         "description2": "Addition of new funcitonalities Continuous improvement",
