@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import newsData from '@/data/NewsData';
 
 const SingleNewz: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const newsArticle = newsData.find((article) => article.id === parseInt(id || '0'));
+
+  // Scroll to top when the component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   if (!newsArticle) {
     return <p className="text-center text-white mt-10">News article not found.</p>;
