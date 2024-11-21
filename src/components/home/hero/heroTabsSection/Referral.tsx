@@ -63,7 +63,28 @@ function Referral() {
 					<CardTitle>Referral</CardTitle>
 				</CardHeader>
 				<CardContent className="space-y-2">
-					<span>Reward: 5%</span>
+					<div className="space-y-2">
+						<h2 className="font-medium text-lg">Earn with Referrals!!</h2>
+						<ul className="font-bold">
+							<li>
+								Phase 1:{" "}
+								<span className="font-normal">
+									Earn 5% of your referral's contribution.
+								</span>
+							</li>
+							<li>
+								Phase 2:
+								<span className="font-normal">
+									{" "}
+									Earn 8% of your referral's contribution.
+								</span>
+							</li>
+						</ul>
+						<p>
+							Your referral rewards will be instantly credited to your wallet after
+							their transaction is confirmed.
+						</p>
+					</div>
 					<div className="space-y-1">
 						<Label htmlFor="referralCode">Referral Code</Label>
 						<div className="flex items-center gap-2">
