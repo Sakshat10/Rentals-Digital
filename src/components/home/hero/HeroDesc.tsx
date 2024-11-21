@@ -1,7 +1,26 @@
 import HeroData from "@/data/HeroData";
 import Button from "../../shared/Button";
+import { Progress } from "@/components/ui/progress";
+import useGetTotalTokensSoldInRound from "@/hooks/web3/useGetTotalTokensSoldInRound";
+import useGetIncreasedProgress from "@/hooks/web3/useGetIncreasedProgress";
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { useEffect, useState } from "react";
 
 function HeroDesc() {
+	const { progress } = useGetTotalTokensSoldInRound(1);
+	const { increasedPercent } = useGetIncreasedProgress();
+
+	const [totalProgress, setTotalProgress] = useState(0);
+
+	useEffect(() => {
+		setTotalProgress(progress + increasedPercent);
+	}, [progress, increasedPercent]);
+
 	return (
 		<div className="flex flex-col w-full md:w-[45vw] lg:w-[40vw] gap-6 text-white">
 			<h1 className="lg:text-7xl text-5xl font-bold">Rentals Digital</h1>
@@ -27,29 +46,25 @@ function HeroDesc() {
 						</div>
 					</div>
 				</div>
+			</div>
+			<div className="space-y-2 md:w-[33vw]">
+				<p>
+					<span className="font-bold">Phase 1:</span> $0.025
+				</p>
+				<TooltipProvider>
+					<Tooltip>
+						<TooltipTrigger asChild>
+							<Progress value={totalProgress > 100 ? 100 : totalProgress} />
+						</TooltipTrigger>
+						<TooltipContent>
+							<p>{totalProgress > 100 ? 100 : totalProgress.toFixed(2)}%</p>
+						</TooltipContent>
+					</Tooltip>
+				</TooltipProvider>
 
-				<div className="space-y-2">
-					<h2 className="font-medium text-lg">Earn with Referrals!!</h2>
-					<ul className="font-bold">
-						<li>
-							Phase 1:{" "}
-							<span className="font-normal">
-								Earn 5% of your referral's contribution.
-							</span>
-						</li>
-						<li>
-							Phase 2:
-							<span className="font-normal">
-								{" "}
-								Earn 8% of your referral's contribution.
-							</span>
-						</li>
-					</ul>
-					<p>
-						Your referral rewards will be instantly credited to your wallet after
-						their transaction is confirmed.
-					</p>
-				</div>
+				<p>
+					<span className="font-bold">Token Price at launch:</span> $0.075
+				</p>
 			</div>
 		</div>
 	);
