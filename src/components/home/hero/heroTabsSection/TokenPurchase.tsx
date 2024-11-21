@@ -28,7 +28,6 @@ function TokenPurchase() {
 		if (amount <= 0) {
 			return toast.error("Amount must be greater than 0.");
 		}
-		console.log(searchParams.get("referral-code"));
 		await purchaseToken({
 			amount,
 			token,
