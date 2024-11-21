@@ -10,7 +10,7 @@ const Roadmap = [
     description3: "Start of platform development",
     description4: "Launch of the public token offering",
     image: dottedLine,
-    mainClassname: "title absolute top-[17vh] right-[2vw] flex flex-col gap-10 "
+    mainClassname: "title absolute top-[24vh] right-[2vw] flex flex-col gap-10 "
   },
   {
     id: "right",
@@ -19,7 +19,7 @@ const Roadmap = [
     description: "Distribution of earnings to token holders",
     description2: "closing deals with brand ambassadors",
     image: dottedLine,
-    mainClassname: " title absolute top-[65vh] right-[2vw] flex flex-col gap-10"
+    mainClassname: " title absolute top-[70vh] right-[2vw] flex flex-col gap-10"
   },
   {
     id: "left",
@@ -31,7 +31,7 @@ const Roadmap = [
     description4: "Marketing campaign to expand reach",
     description5: "Securing strategic partnership",
     image: dottedLine,
-    mainClassname: "title absolute top-[44vh] left-[5vw] flex flex-col gap-10 "
+    mainClassname: "title absolute top-[50vh] left-[5vw] flex flex-col gap-10 "
   },
   {
     id: "left",
@@ -44,15 +44,6 @@ const Roadmap = [
     image: dottedLine,
     mainClassname: "title absolute top-[8vh] left-[5vw] flex flex-col gap-10"
   },
-  {
-    id: "left",
-    quarter: "2025 - Q3",
-    title: "Listing on additional CEX platforms",
-    description: "Creation of a strategic growth team",
-    description2: "Addition of new funcitonalities Continuous improvement",
-    image: dottedLine,
-    mainClassname: "title absolute top-[79vh] left-[5vw] flex flex-col gap-10"
-  }
 ];
 
 export default Roadmap;

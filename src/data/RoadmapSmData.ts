@@ -37,13 +37,6 @@ const RoadmapSm = {
         "description2": "closing deals with brand ambassadors",
         image: dottedLine,
           },
-      {
-        "quarter": "2025 - Q3",
-        "title": "Listing on additional CEX platforms",
-        "description": "Creation of a strategic growth team",
-        "description2": "Addition of new funcitonalities Continuous improvement",
-        image: dottedLine,
-          }
     ]
   }
   
