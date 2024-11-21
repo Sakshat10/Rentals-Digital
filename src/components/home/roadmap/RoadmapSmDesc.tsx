@@ -9,6 +9,10 @@ function RoadmapSmDesc() {
             <p className="text-xl font-bold">{item.quarter}</p>
             <h1 className="text-white font-bold">{item.title}</h1>
             <p className="text-slate-300">{item.description}</p>
+            <p className="text-slate-300">{item.description2}</p>
+            <p className="text-slate-300">{item.description3}</p>
+            <p className="text-slate-300">{item.description4}</p>
+            <p className="text-slate-300">{item.description5}</p>
           </div>
         </div>
       ))}

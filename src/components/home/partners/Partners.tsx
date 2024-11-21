@@ -3,7 +3,7 @@ import { partners } from "@/data/PartnersData";
 
 function Partners() {
   return (
-    <div className="py-8 overflow-x-hidden">
+    <div className="py-8 md:mt-16 overflow-x-hidden">
       <h2 className="text-center text-5xl font-bold text-white mb-6">Our Partners</h2>
       <Marquee speed={50} gradient={false}>
         <div className="flex items-center">

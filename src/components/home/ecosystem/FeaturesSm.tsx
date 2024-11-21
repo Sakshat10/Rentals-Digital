@@ -7,7 +7,7 @@ function FeaturesSm() {
         <div key={feature.data.title} className={feature.mainClassName}>
           <img src={feature.image} alt={feature.data.title} className="w-16 h-16" />
           <div className={feature.secondaryClass}>
-            <h3 className="text-lg font-bold text-white">{feature.data.title}</h3>
+            <h3 className="text-lg font-bold text-white text-start">{feature.data.title}</h3>
             <p className="text-sm text-slate-300">{feature.data.description}</p>
           </div>
         </div>

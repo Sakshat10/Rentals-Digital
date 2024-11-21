@@ -10,7 +10,7 @@ export default {
       animation: {
         fadeIn: 'fadeIn 0.3s ease-in-out',
         float: 'float 8s ease-in-out infinite', 
-        move: 'move 8s ease-in-out infinite', 
+        move: 'move 10s ease-in-out infinite', 
 
       },
       keyframes: {
@@ -23,7 +23,7 @@ export default {
           '50%': { transform: 'translateY(-30px)' },
         },
         move: {
-          '0%, 100%': { transform: 'translateY(0)' },
+          '0%, 100%': { transform: 'translateY(60px)' },
           '50%': { transform: 'translateY(-80px)' },
         },
       },
