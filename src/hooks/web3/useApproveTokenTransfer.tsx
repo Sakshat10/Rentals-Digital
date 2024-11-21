@@ -31,8 +31,7 @@ export default function useApproveTokenTransfer() {
 			toast.success("Successfully approved token transfer.");
 
 			setIsSuccess(true);
-		} catch (error) {
-			console.log(error);
+		} catch  {
 			throw new Error("Something went wrong. Please try again.");
 		} finally {
 			setIsLoading(false);

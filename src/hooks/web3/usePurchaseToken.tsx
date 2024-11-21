@@ -60,7 +60,6 @@ export default function usePurchaseToken() {
 					return;
 				}
 			}
-			console.log(error);
 			toast.error("Failed to purchase token.");
 		} finally {
 			setIsLoading(false);
