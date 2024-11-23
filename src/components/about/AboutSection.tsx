@@ -14,7 +14,6 @@ import TokenomicsSection from "./tokenomics/TokenomicsSection"
 
 
 function AboutSection() {
-  // abouttttttttt
   return (
     <div className="min-h-screen py-7 relative">
         <div className="flex justify-around items-center flex-wrap gap-6  px-5 md:px-4">
