@@ -1,6 +1,9 @@
 [
 	{
 		"inputs": [
+			{ "internalType": "address", "name": "_pricefeed", "type": "address" },
+			{ "internalType": "address", "name": "_usdt", "type": "address" },
+			{ "internalType": "address", "name": "_rentsToken", "type": "address" },
 			{ "internalType": "address", "name": "_treasuryWallet", "type": "address" }
 		],
 		"stateMutability": "nonpayable",
@@ -92,13 +95,13 @@
 			{
 				"indexed": false,
 				"internalType": "address",
-				"name": "buyer",
+				"name": "buyer_",
 				"type": "address"
 			},
 			{
 				"indexed": false,
 				"internalType": "uint256",
-				"name": "amount",
+				"name": "amount_",
 				"type": "uint256"
 			}
 		],
@@ -110,18 +113,30 @@
 		"inputs": [
 			{
 				"indexed": false,
-				"internalType": "address",
-				"name": "_user",
-				"type": "address"
+				"internalType": "uint256",
+				"name": "round_",
+				"type": "uint256"
 			},
 			{
 				"indexed": false,
-				"internalType": "string",
-				"name": "code",
-				"type": "string"
+				"internalType": "uint256",
+				"name": "rentalPrice_",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "referralRate_",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "maxToken_",
+				"type": "uint256"
 			}
 		],
-		"name": "createReferral",
+		"name": "createPresale",
 		"type": "event"
 	},
 	{
@@ -129,40 +144,26 @@
 		"inputs": [
 			{
 				"indexed": false,
-				"internalType": "uint256",
-				"name": "round",
-				"type": "uint256"
+				"internalType": "address",
+				"name": "user_",
+				"type": "address"
 			},
 			{
 				"indexed": false,
-				"internalType": "uint256",
-				"name": "price",
-				"type": "uint256"
-			},
-			{
-				"indexed": false,
-				"internalType": "uint256",
-				"name": "maxTokenInRound",
-				"type": "uint256"
+				"internalType": "string",
+				"name": "code_",
+				"type": "string"
 			}
 		],
-		"name": "intializeSale",
+		"name": "createRefferalCode",
 		"type": "event"
-	},
-	{
-		"inputs": [
-			{ "internalType": "address", "name": "", "type": "address" },
-			{ "internalType": "uint256", "name": "", "type": "uint256" }
-		],
-		"name": "PurchaseICO",
-		"outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
-		"stateMutability": "view",
-		"type": "function"
 	},
 	{
 		"inputs": [],
 		"name": "RENTS",
-		"outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+		"outputs": [
+			{ "internalType": "contract IERC20", "name": "", "type": "address" }
+		],
 		"stateMutability": "view",
 		"type": "function"
 	},
@@ -183,36 +184,46 @@
 		"type": "function"
 	},
 	{
-		"inputs": [],
-		"name": "convertBNBtoUSD",
-		"outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
-		"stateMutability": "view",
-		"type": "function"
-	},
-	{
 		"inputs": [{ "internalType": "address", "name": "", "type": "address" }],
-		"name": "couponCodes",
+		"name": "couponCode",
 		"outputs": [{ "internalType": "string", "name": "", "type": "string" }],
 		"stateMutability": "view",
 		"type": "function"
 	},
 	{
 		"inputs": [{ "internalType": "string", "name": "code", "type": "string" }],
-		"name": "createRefferalCode",
+		"name": "generateCouponCode",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
 	},
 	{
-		"inputs": [{ "internalType": "string", "name": "code", "type": "string" }],
-		"name": "generateReferralCode",
-		"outputs": [],
-		"stateMutability": "nonpayable",
+		"inputs": [
+			{ "internalType": "uint256", "name": "payementMethod", "type": "uint256" },
+			{ "internalType": "uint256", "name": "amount", "type": "uint256" }
+		],
+		"name": "getAmount",
+		"outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getLatestPrice",
+		"outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getTotalFundRised",
+		"outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+		"stateMutability": "view",
 		"type": "function"
 	},
 	{
 		"inputs": [{ "internalType": "address", "name": "", "type": "address" }],
-		"name": "hasSetCoupon",
+		"name": "hasSetreferral",
 		"outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
 		"stateMutability": "view",
 		"type": "function"
@@ -233,7 +244,7 @@
 	},
 	{
 		"inputs": [],
-		"name": "pauseICO",
+		"name": "pausePresell",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -247,7 +258,7 @@
 	},
 	{
 		"inputs": [
-			{ "internalType": "string", "name": "code", "type": "string" },
+			{ "internalType": "string", "name": "referral", "type": "string" },
 			{ "internalType": "uint256", "name": "payementMethod", "type": "uint256" },
 			{ "internalType": "uint256", "name": "amount", "type": "uint256" }
 		],
@@ -265,7 +276,7 @@
 	},
 	{
 		"inputs": [{ "internalType": "address", "name": "", "type": "address" }],
-		"name": "referralEarningUSDT",
+		"name": "referralEarningUSD",
 		"outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
 		"stateMutability": "view",
 		"type": "function"
@@ -286,14 +297,14 @@
 	},
 	{
 		"inputs": [],
-		"name": "rentTokenPrice",
+		"name": "rentalPrice",
 		"outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
 		"stateMutability": "view",
 		"type": "function"
 	},
 	{
 		"inputs": [],
-		"name": "resumeICO",
+		"name": "resumePresell",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -306,15 +317,15 @@
 		"type": "function"
 	},
 	{
-		"inputs": [{ "internalType": "address", "name": "", "type": "address" }],
-		"name": "tokenPurchased",
+		"inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+		"name": "soldTokenInPhase",
 		"outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
 		"stateMutability": "view",
 		"type": "function"
 	},
 	{
-		"inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
-		"name": "tokenSoldInRounds",
+		"inputs": [{ "internalType": "address", "name": "", "type": "address" }],
+		"name": "tokenPurchased",
 		"outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
 		"stateMutability": "view",
 		"type": "function"
@@ -345,11 +356,20 @@
 	{
 		"inputs": [
 			{ "internalType": "uint256", "name": "_round", "type": "uint256" },
-			{ "internalType": "uint256", "name": "_rentsTokenPrice", "type": "uint256" },
-			{ "internalType": "uint256", "name": "_maxTokenInround", "type": "uint256" },
-			{ "internalType": "uint256", "name": "_referralRate", "type": "uint256" }
+			{ "internalType": "uint256", "name": "_rentalPrice", "type": "uint256" },
+			{ "internalType": "uint256", "name": "_referralRate", "type": "uint256" },
+			{ "internalType": "uint256", "name": "_maxTokenInround", "type": "uint256" }
 		],
-		"name": "updatePresell",
+		"name": "updatePresale",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{ "internalType": "address", "name": "_token", "type": "address" }
+		],
+		"name": "updateRentalAddress",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"
@@ -366,6 +386,16 @@
 	{
 		"inputs": [{ "internalType": "address", "name": "_usdt", "type": "address" }],
 		"name": "updateusdAddresses",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{ "internalType": "address", "name": "account", "type": "address" },
+			{ "internalType": "uint256", "name": "amount", "type": "uint256" }
+		],
+		"name": "withdrawRentsToken",
 		"outputs": [],
 		"stateMutability": "nonpayable",
 		"type": "function"

@@ -6,10 +6,10 @@ import {
 } from "./abi";
 
 export const contractAddress = {
-	rentalAddress: "0xBc06f43f5BcE98cd9f888E79EF8cdE848B63Fa48" as `0x${string}`,
+	rentalAddress: "0x8e4e93743efCBe8A41ae55A6A58A905e77E03b54" as `0x${string}`,
 	usdtAddress: "0x55d398326f99059fF775485246999027B3197955" as `0x${string}`,
 	rentalTokenAddress:
-		"0xbB4c65eDE4889Ba1E489cF4d7aF0f6c83ab6fc94" as `0x${string}`,
+		"0xB46dCA78149F66f7cb261d0bC34dc66171Ebee83" as `0x${string}`,
 	progressUpdateContract:
 		"0x8fBE6221D7a9721C21b8116A7b8f6a7953979236" as `0x${string}`,
 };
