@@ -1,5 +1,6 @@
 import darkCloudFull from "@/assets/Images/sharedImg/darkCloudFull.png"
 
+//ADDED CLOUD
 function CloudCont() {
   return (
     <div className="absolute animate-float top-1/2 right-2 hidden lg:block">
