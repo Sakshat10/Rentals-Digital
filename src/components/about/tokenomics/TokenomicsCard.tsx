@@ -15,7 +15,7 @@ const TokenomicsCard: React.FC<TokenomicsCardProps> = ({
 }) => {
   return (
     <div
-      className={`flex justify-between items-center mx-4 rounded-md py-2 px-4 bg-white/10 backdrop-blur-sm lg:w-[40vw] w-[60vw] h-fit`}
+      className={`flex justify-between items-center mx-4 rounded-md py-2 px-4 bg-black opacity-60 backdrop-blur-sm lg:w-[40vw] w-[60vw] h-fit`}
       style={{ borderLeft: `4px solid ${borderColor}` }}
     >
       <div>

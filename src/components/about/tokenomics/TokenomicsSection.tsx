@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import ChartDataLabels from "chartjs-plugin-datalabels";
 import { Doughnut } from "react-chartjs-2";
 import {
@@ -8,10 +9,10 @@ import {
   Title,
   SubTitle,
 } from "chart.js";
-// import TokenomicsCard from "./TokenomicsCard";
-import { FaRegCopy } from "react-icons/fa";
+
 import { useState } from "react";
 import { ChartOptions } from "chart.js";
+import TokenomicsCard from "./TokenomicsCard";
 ChartJS.register(ArcElement, Tooltip, Legend, Title, SubTitle, ChartDataLabels);
 
 // Updated data
@@ -124,44 +125,25 @@ const Tokenomics = () => {
     },
   };
 
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText("0x048FeB8D61A905288F3E098C376BA199cE6b750F");
-    setTooltipVisible(true);
-    setTimeout(() => setTooltipVisible(false), 2000);
-  };
-
   return (
     <div className="min-h-[100vh]  md:px-12 px-4">
-      <h1 className="py-12 text-2xl text-white md:text-4xl md:text-center">
+      <h1 className="py-12 text-2xl font-semibold text-center text-white md:text-4xl md:text-center">
         Token And Tokenomics
+      </h1>
+      <h1 className="font-semibold text-white md:w-[85%] lg:w-[75%] mx-auto text-center pb-24 ">
+        The Rentals Token (RNT) is the core utility token within the Rentals
+        ecosystem. It facilitates transactions, rewards, and various
+        interactions on the platform, leveraging blockchain technology to ensure
+        transparency and security.
       </h1>
       <div className="relative flex flex-col items-center justify-center w-full lg:flex-row">
         <div className="">
-          <div className="block text-2xl text-white md:text-4xl md:ml-20">
-            <h1>DXR Tokens</h1>
-            <p className="relative text-sm w-fit">
-              0x048FeB8D61A905288F3E098C376BA199cE6b750F
-              <span>
-                <button
-                  onClick={copyToClipboard}
-                  className="ml-2 text-white rounded"
-                >
-                  <FaRegCopy />
-                </button>
-              </span>
-              {tooltipVisible && (
-                <div className="absolute right-0 p-2 mt-2 text-sm text-black bg-white rounded -top-12">
-                  Copied!
-                </div>
-              )}
-            </p>
-          </div>
           <div className="w-[80vw] h-[80vh] md:w-[70vw] lg:w-[50vw] lg:h-[90vh] flex justify-center items-center">
             <Doughnut data={chartData} options={chartOptions} />
           </div>
         </div>
 
-        {/* <div className="flex-col items-center hidden min-h-screen gap-4 md:flex">
+        <div className="flex-col items-center hidden min-h-screen gap-4 md:flex">
           {data.map((item, index) => (
             <TokenomicsCard
               key={index}
@@ -171,7 +153,7 @@ const Tokenomics = () => {
               borderColor={item.borderColor}
             />
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );
