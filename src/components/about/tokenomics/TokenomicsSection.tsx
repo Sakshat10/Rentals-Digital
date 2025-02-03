@@ -9,8 +9,6 @@ import {
   Title,
   SubTitle,
 } from "chart.js";
-
-import { useState } from "react";
 import { ChartOptions } from "chart.js";
 import TokenomicsCard from "./TokenomicsCard";
 ChartJS.register(ArcElement, Tooltip, Legend, Title, SubTitle, ChartDataLabels);
@@ -86,8 +84,6 @@ const data = [
 ];
 
 const Tokenomics = () => {
-  const [tooltipVisible, setTooltipVisible] = useState(false);
-
   const chartData = {
     labels: data.map((item) => item.heading),
     datasets: [
