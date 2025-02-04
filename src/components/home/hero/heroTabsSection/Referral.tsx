@@ -9,11 +9,6 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import {
-	Popover,
-	PopoverContent,
-	PopoverTrigger,
-} from "@/components/ui/popover";
 import toast, { Toaster } from "react-hot-toast";
 import useGenerateReferralCode from "@/hooks/web3/useGenerateReferralCode";
 import useGetReferralCode from "@/hooks/web3/useGetReferralCode";
@@ -29,7 +24,6 @@ function Referral() {
 	const {
 		referralCode: referralCodeOnChain,
 		isLoading,
-		isError,
 		refetch,
 	} = useGetReferralCode(walletAddress);
 
@@ -72,13 +66,6 @@ function Referral() {
 									Earn 5% of your referral's contribution.
 								</span>
 							</li>
-							<li>
-								Phase 2:
-								<span className="font-normal">
-									{" "}
-									Earn 8% of your referral's contribution.
-								</span>
-							</li>
 						</ul>
 						<p>
 							Your referral rewards will be instantly credited to your wallet after
@@ -101,7 +88,7 @@ function Referral() {
 								onChange={(e) => {
 									setReferralCode(e.target.value);
 								}}
-								disabled={!!referralCodeOnChain || isLoading || isError}
+								disabled={!!referralCodeOnChain || isLoading}
 								readOnly={!!referralCodeOnChain}
 								placeholder="Generate a referral code"
 							/>
@@ -118,42 +105,18 @@ function Referral() {
 					</div>
 				</CardContent>
 				<CardFooter>
-					<Popover>
-						{!walletAddress ? (
-							<ConnectWallet className="w-full" />
-						) : (
-							<PopoverTrigger asChild>
-								<Button
-									variant="outline"
-									className="w-full border-custom-left text-white font-bold bg-custom-left"
-									disabled={isPending || !referralCode}
-								>
-									{isPending ? "Generating..." : "Generate Referral Code"}
-								</Button>
-							</PopoverTrigger>
-						)}
-						<PopoverContent className="w-80">
-							<div className="grid gap-4">
-								<div className="space-y-2">
-									<h4 className="font-medium leading-none">Create Referral Code</h4>
-									<p className="text-sm text-muted-foreground text-[#252A297A]">
-										📢 Make a certain number of token purchases first to be able to
-										generate a referral link!
-									</p>
-								</div>
-								<div className="grid gap-6">
-									<Button
-										variant="outline"
-										className="w-full border-custom-left text-white font-bold bg-custom-left disabled:cursor-not-allowed"
-										onClick={generateReferralCode}
-										disabled={isPending || !referralCode}
-									>
-										{isPending ? "Generating..." : "Generate Referral Code"}
-									</Button>
-								</div>
-							</div>
-						</PopoverContent>
-					</Popover>
+					{!walletAddress ? (
+						<ConnectWallet className="w-full" />
+					) : (
+						<Button
+							variant="outline"
+							className="w-full border-custom-left text-white font-bold bg-custom-left disabled:cursor-not-allowed"
+							onClick={generateReferralCode}
+							disabled={isPending || !referralCode}
+						>
+							{isPending ? "Generating..." : "Generate Referral Code"}
+						</Button>
+					)}
 				</CardFooter>
 			</Card>
 		</div>

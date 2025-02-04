@@ -19,7 +19,7 @@ export default function useGenerateReferralCode() {
 
 			const hash = await writeContractAsync({
 				...contractConfig.rentalConfig,
-				functionName: "generateReferralCode",
+				functionName: "generateCouponCode",
 				args: [referralCode],
 			});
 
@@ -51,6 +51,7 @@ export default function useGenerateReferralCode() {
 				}
 			}
 			toast.error("Could not generate referral code. Please try again later.");
+			console.log(error);
 		} finally {
 			setIsLoading(false);
 		}

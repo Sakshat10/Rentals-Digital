@@ -5,13 +5,13 @@ import { Config, useReadContract } from "wagmi";
 export default function useGetReferralCode(walletAddress?: `0x${string}`) {
 	const { data, ...props } = useReadContract<
 		Abi,
-		"couponCodes",
+		"couponCode",
 		[string],
 		Config,
 		string
 	>({
 		...contractConfig.rentalConfig,
-		functionName: "couponCodes",
+		functionName: "couponCode",
 		args: [walletAddress],
 	});
 

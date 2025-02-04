@@ -49,7 +49,7 @@ function HeroDesc() {
 			</div>
 			<div className="space-y-2 md:w-[33vw]">
 				<p>
-					<span className="font-bold">Phase 1:</span> $0.025
+					<span className="font-bold">Phase 1:</span> $0.006
 				</p>
 				<TooltipProvider>
 					<Tooltip>

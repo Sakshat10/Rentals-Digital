@@ -5,7 +5,6 @@ import {
 	CardContent,
 	CardFooter,
 	CardHeader,
-	CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -15,6 +14,7 @@ import { useAccount } from "wagmi";
 import usePurchaseToken from "@/hooks/web3/usePurchaseToken";
 import toast from "react-hot-toast";
 import { useSearchParams } from "react-router-dom";
+import BuyRentButton from "../BuyRentButton";
 
 function TokenPurchase() {
 	const { address: walletAddress } = useAccount();
@@ -40,7 +40,8 @@ function TokenPurchase() {
 		<div>
 			<Card>
 				<CardHeader>
-					<CardTitle>Token Purchase Phase 1</CardTitle>
+					{/* <CardTitle>Token Purchase Phase 1</CardTitle> */}
+					<BuyRentButton />
 				</CardHeader>
 				<CardContent>
 					<SelectHero setToken={setToken} />
@@ -50,7 +51,7 @@ function TokenPurchase() {
 					<div className="space-y-1">
 						<div className="flex items-center justify-between">
 							<Label htmlFor="amount">Enter the amount</Label>
-							<span className="text-sm">Token Price: $0.025</span>
+							<span className="text-sm">Token Price: $0.006</span>
 						</div>
 						<Input
 							id="amount"
