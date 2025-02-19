@@ -63,7 +63,7 @@ function HeroDesc() {
 				</TooltipProvider>
 
 				<p>
-					<span className="font-bold">Token Price at launch:</span> $0.075
+					<span className="font-bold">Token Price at launch:</span> $0.012
 				</p>
 			</div>
 		</div>
